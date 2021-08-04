@@ -1,0 +1,48 @@
+<header class="header" [ngClass]="status ? 'sort-open' : 'sort-close'">
+
+    <div class="search">
+
+        <div></div>
+
+        <div class="search-block">
+            <img src="../../../assets/images/logo.png" alt="youtube logo">
+
+            <div>
+                <input class="search-block-text" type="text" id="" placeholder="What are you want to find out?">
+                <button class="search-block-button">search</button>
+            </div>
+
+            <button class="search-block-sort" (click)="toggleSort()">
+                <img src="../../../assets/images/sort.png" alt="sort icon">
+            </button>
+        </div>
+
+        <button class="login">
+            <p class="login-text">Log In</p>
+            <div class="login-image">
+                <div class="login-image-bg"></div>
+                <img class="login-image-img"  src="../../../assets/images/Subtract.png" alt="">
+            </div>
+        </button>
+        
+
+    </div>
+
+    <div class="sort">
+
+        <div class="sort-block">
+
+            <p class="sort-block-title">Sorting by:</p>
+
+            <div class="sort-block-buttons">
+                <button class="sort-block-buttons-date button">date</button>
+                <button class="sort-block-buttons-views button">count of views</button>
+                <button class="sort-block-buttons-word button block-btn">by word or sentance</button>
+                <input class="sort-block-buttons-input" type="text" name="" id="">
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
