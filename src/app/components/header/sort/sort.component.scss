@@ -1,0 +1,44 @@
+.sort {
+  height: 60px;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-block {
+    width: 520px;
+    height: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+      color: #929292;
+    }
+
+    &-buttons {
+      width: 425px;
+      display: flex;
+      justify-content: space-between;
+
+      &-input {
+        width: 150px;
+        border: none;
+      }
+    }
+  }
+}
+
+.button {
+  color: #2f80ed;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.block-btn {
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}

@@ -6,13 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  status: boolean = false;
-
   constructor() {}
 
   ngOnInit(): void {}
-
-  toggleSort() {
-    this.status = !this.status;
-  }
 }
