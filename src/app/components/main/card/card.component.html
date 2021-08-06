@@ -1,0 +1,33 @@
+<div class="card" *ngFor="let item of list">
+
+    <div class="card-preview">
+        <img class="card-preview-img" src="{{item.snippet.thumbnails.medium.url}}" alt="">
+
+        <div class="card-stat">
+            <div class="card-stat-block">
+                <img src="../../../../assets/images/viewed.png" alt="">
+                <p class="card-stat-block-text">{{item.statistics.viewCount}}</p>
+            </div>
+            <div class="card-stat-block">
+                <img src="../../../../assets/images/liked.png" alt="">
+                <p class="card-stat-block-text">{{item.statistics.likeCount}}</p>
+            </div>
+            <div class="card-stat-block">
+                <img src="../../../../assets/images/dislike.png" alt="">
+                <p class="card-stat-block-text">{{item.statistics.dislikeCount}}</p>
+            </div>
+            <div class="card-stat-block">
+                <img src="../../../../assets/images/Group 9.png" alt="">
+                <p class="card-stat-block-text">{{item.statistics.commentCount}}</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-title">
+        <p class="card-title-text">{{item.snippet.title}}</p>
+    </div>
+    
+    <button class="card-more">More...</button>
+
+    <div class="card-light"></div>
+</div>
